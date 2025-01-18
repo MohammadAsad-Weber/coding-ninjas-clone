@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .bar-none {
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    /* animation classes for text in Transform Component */
+    .animated-text {
+        animation: scale-text linear both;
+        animation-timeline: view(30%);
+    }
+    .animated-para {
+        animation: color-para linear both;
+        animation-timeline: view(25%);
+    }
+
+    /* animation classes for images in Transform Component */
+    .animated-learner {
+        animation: learner linear both;
+        animation-timeline: view(45%);
+    }
+    .animated-placement {
+        animation: placement linear both;
+        animation-timeline: view(45%);
+    }
+    .animated-average-ctc {
+        animation: average-ctc linear both;
+        animation-timeline: view(45%);
+    }
+    .animated-hike {
+        animation: hike linear both;
+        animation-timeline: view(45%);
+    }
+
+    /* animation classes for loading bars in Advantage Component */
+    .animated-coding-ninjas {
+        animation: coding-ninjas 3s ease-out;
+    }
+    .animated-others {
+        animation: others 10s ease-out;
+    }
+
+    /* Keyframes for animated text in Transform Component */
+    @keyframes scale-text {
+        0% { scale: 0.95; color: #555;}
+        25%, 50%, 100% { scale: 1.075; color: #ffffff;}
+    }
+    @keyframes color-para {
+        0% { color: #555;}
+        25%, 50%, 100%  { color: #999;}
+    }
+
+    /* Keyframes for animated images in Transform Component */
+    @keyframes learner {
+        0% { background-color: #2f2f2f;}
+        25%, 50%, 100%  { background-color: #6249c5;}
+    }
+    @keyframes placement {
+        0% { background-color: #2f2f2f;}
+        25%, 50%, 100%  { background-color: #65b168;}
+    }
+    @keyframes average-ctc {
+        0% { background-color: #2f2f2f;}
+        25%, 50%, 100%  { background-color: #ef6292;}
+    }
+    @keyframes hike {
+        0% { background-color: #2f2f2f;}
+        25%, 50%, 100%  { background-color: #5780e9;}
+    }
+
+    /* Keyframes for loading animation in Advantage Component */
+    @keyframes coding-ninjas {
+        0% {width: 0%;}
+        100% {width: 100%;}
+    }
+    @keyframes others {
+        0% {width: 0%;}
+        100% {width: 75%;}
+    }
+}
